@@ -1,0 +1,167 @@
+* {
+    margin:0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+html {
+    font-family: Proxima Nova;
+    font-weight: 400;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: auto;
+}
+.firstpage{
+    width: 85%;
+    margin: auto;
+    height: 100vh;
+    overflow: hidden;
+}
+.nav
+{
+    height: 13%;
+    display: flex;
+}
+.nav>a{
+    margin-right: 50px;
+    text-decoration: None;
+    color: #212121;
+    font-weight: 550;
+    margin-top: 60px;
+    font-size: 20px;
+}
+.firstpagewrapper{
+    display: flex;
+    height: 90%;
+}
+.firstpageleft{
+    display: inline-block;
+    padding: 250px 0px;
+    width: 90%;
+}
+.firstpageright{
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    height: 100%;
+    width: auto;
+}
+.page1phone{
+    width: 318px;
+    height: auto;
+}
+.viewproducts{
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+}
+h2 {
+    font-size: 26px;
+}
+.arrow{
+    width: 15px;
+    height:15px;
+    margin-left: 10px;
+}
+.viewproducts>h2>a{
+    text-decoration: none;
+    color: #1877F2;
+}
+/*-------------Facebook page------------------*/
+.facebook{
+    background-color: #1877F2;
+    overflow: hidden;
+}
+.wrapper{
+    width:85%;
+    display: flex;
+    margin: auto;
+    height: 100vh;
+}
+.left{
+    width: 74%;
+    text-align: left;
+    height: 100%;
+    position: relative;
+    display: table-cell;
+}
+.logoandcontent{
+    position: absolute;
+    top: 15%;
+}
+.right{
+    text-align: right;
+    width: auto;
+    position: relative;
+}
+.phone{
+    width: 321px;
+    height: auto;
+    position: absolute;
+    top: 11%;
+}
+.logo{
+    margin-bottom: 30px; 
+    width: 170px;
+    height: auto;
+}
+h1{
+    font-weight: 600;
+    font-size: 34px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+p {
+    font-size: 20px;
+    font-weight: 100;
+    color: #ffffff;
+    margin-top: 30px;
+    line-height: 0.8cm;
+}
+.button{
+    background: transparent;
+}
+.button{
+    width: 40%;
+    margin-top: 30px;
+    margin-left: -5px;
+}
+/*-------------Messenger page------------------*/
+.messenger{
+    background-image: url("/images/messengerbg.png");
+    overflow: hidden;
+}
+/*-------------Instagram page------------------*/
+.instagram{
+    background-image: url("images/ig-gradient-d-20200504-web-oxi3-1920w-saf.png");
+    overflow: hidden;
+}
+/*-------------WhatsApp page------------------*/
+.whatsapp{
+    background-color:#25D366 ;
+    overflow: hidden;
+}
+/*-------------Oculus page------------------*/
+.oculus{
+    background-color:#1D1E20 ;
+    overflow: hidden;
+}
+.oculus>.wrapper>.left>.logoandcontent{
+    top: 23% !important; 
+}
+.oculusright{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quest{
+    width: 550px;
+    height: auto;
+}

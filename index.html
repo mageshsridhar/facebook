@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <div class="firstpage">
+        <div class="nav">
+            <a href="#">Who We Are</a>
+            <a href="#">What We Build</a>
+            <a href="#">Actions We Are Taking</a>
+            <a href="#">Resources</a>
+        </div>
+        <div class="firstpagewrapper">
+            <div class="firstpageleft animate__animated animate__fadeInLeft">
+                <video width="70%" autoplay loop>
+                    <source src="./images/fb.mp4" type="video/mp4"/>
+                </video>
+                <div class="viewproducts">
+                    <h2><a href="#facebook">View Products</a></h2>
+                    <img class="arrow" src="images/Icon awesome-angle-double-down.png" alt="Arrow">
+                </div>
+            </div>
+            <div class="firstpageright animate__animated animate__fadeInRight">
+                <img class="page1phone" id="page1phone" src="images/FBMission.png" alt="Facebook Mission">
+            </div>
+        </div>
+    </div>
+    <a name="facebook"><div class="facebook"></a>
+        <div class="wrapper">
+            <div class="left">
+                <div class="logoandcontent">
+                <img src="images/What-We-Build.png" alt="facebooklogo" class="logo">
+                <h1>Let’s find more that brings us together.</h1>
+                <p>The Facebook app helps you connect with friends, family and<br>communities of people who share your interests. Connecting with your<br>friends and family as well as discovering new ones is easy with features<br>like Groups, Watch and Marketplace.</p>
+                <img class="button" src="/images/Group 3.png" alt="facebookbutton">
+            </div>
+            </div>
+            <div class="right">
+                <img class="phone" id="fbphone" src="images/FacebookHomepage.png" alt="facebookhome">
+            </div>
+        </div>
+    </div>
+    <div class="messenger">
+        <div class="wrapper">
+            <div class="left">
+                <div class="logoandcontent">
+                <img src="images/D_FB_Tech_Messenger.png" alt="messengerlogo" class="logo">
+                <h1>Be together, whenever.</h1>
+                <p>Messenger helps you connect with the people you care about most. It is<br>your shared space to customize and express what’s on your mind and<br>share content and experiences in the moment together on any device,<br>anytime, anywhere.</p>
+                <img class="button" src="/images/Group 4.png" alt="messengerbutton">
+            </div>
+            </div>
+            <div class="right">
+                <img class="phone" id="messengerphone" src="images/MessengerChat.png" alt="messengerchat">
+            </div>
+        </div>
+    </div>
+    <div class="instagram">
+        <div class="wrapper">
+            <div class="left">
+                <div class="logoandcontent">
+                <img src="images/What-We-Build-1.png" alt="instalogo" class="logo">
+                <h1 style="line-height: 1.1cm;">Bringing you closer to the people and<br>things you love.</h1>
+                <p>We want Instagram to be a place where people can be inspired every<br>day. We foster a safe and inclusive community where people can express<br>themselves, feel closer to anyone they care about and turn a passion into<br>a living.</p>
+                <img class="button" src="/images/Group 5.png" alt="instabutton">
+            </div>
+            </div>
+            <div class="right">
+                <img class="phone" id="instaphone" src="images/InstaProfile.png" alt="instaprofile">
+            </div>
+        </div>
+    </div>
+    <div class="whatsapp">
+        <div class="wrapper">
+            <div class="left">
+                <div class="logoandcontent">
+                <img src="images/What-We-Build-2.png" alt="whatsapplogo" class="logo">
+                <h1>Simple. Secure. Reliable messaging.</h1>
+                <p>We believe everyone in the world should be able to stay in touch with<br>their loved ones and communicate without barriers. We build WhatsApp<br>to connect you with the people you care about most, effortlessly and<br>privately.</p>
+                <img class="button" src="/images/Group 6.png" alt="whatsappbutton">
+            </div>
+            </div>
+            <div class="right">
+                <img class="phone" id="whatsappphone" src="images/WhatsAppChat.png" alt="whatsappchat">
+            </div>
+        </div>
+    </div>
+    <div class="oculus">
+        <div class="wrapper">
+            <div class="left">
+                <div class="logoandcontent">
+                <img src="images/Subtraction 1.png" alt="oculuslogo" class="logo">
+                <h1>Feel connected anytime, anywhere.</h1>
+                <p>With Oculus, we’re creating new ways for people to defy distance and<br>connect with each other and the world around them. Through virtual<br>reality, we can radically redefine the way people work, play and connect.</p>
+                <img class="button" src="/images/Group 7.png" alt="oculusbutton">
+            </div>
+            </div>
+            <div class="right">
+                <div class="oculusright wow animate__animated animate__fadeInRight animate__delay-1s">
+                <img class="quest" src="images/quest.png" alt="quest">
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="wow.min.js">
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        var tl = new TimelineMax({onUpdate:updatePercentage});
+        const controller = new ScrollMagic.Controller();
+        tl.to('#page1phone', 1, {y:750, opacity: 1});
+        //tl.from('.phone', 4, { y:-600,opacity: 0});
+        //tl.from('#office', 1, {x:-200, opacity: 0,ease: Power4.easeInOut}, "=-1");
+        //tl.from('#building', 1, {x:200, opacity: 0, ease: Power4.easeInOut}, "=-.7");
+
+        const scene = new ScrollMagic.Scene({
+                    triggerElement: ".firstpage",
+                    triggerHook: "onLeave",
+                    duration: "100%"
+        })
+        .setTween(tl)
+        .addTo(controller);
+
+        var tl2 = new TimelineMax({onUpdate:updatePercentage});
+        tl2.from('#fbphone', 5, {y:-800,opacity: 1});
+
+        const scene2 = new ScrollMagic.Scene({
+            triggerElement: ".facebook",
+            triggerHook: 1,
+            duration: "100%"
+        })
+        .setTween(tl2)
+        .addTo(controller);
+
+        var tl3 = new TimelineMax({onUpdate:updatePercentage});
+        tl3.to('#fbphone', 5, {y:750, opacity: 1});
+        const scene3 = new ScrollMagic.Scene({
+                    triggerElement: ".facebook",
+                    triggerHook: "onLeave",
+                    duration: "100%"
+        })
+        .setTween(tl3)
+        .addTo(controller);
+
+        var tl4 = new TimelineMax({onUpdate:updatePercentage});
+        tl4.from('#messengerphone', 5, {y:-800,opacity: 1});
+
+        const scene4 = new ScrollMagic.Scene({
+            triggerElement: ".messenger",
+            triggerHook: 1,
+            duration: "100%"
+        })
+        .setTween(tl4)
+        .addTo(controller);
+
+        var tl5 = new TimelineMax({onUpdate:updatePercentage});
+        tl5.to('#messengerphone', 5, {y:750, opacity: 1});
+        const scene5 = new ScrollMagic.Scene({
+                    triggerElement: ".messenger",
+                    triggerHook: "onLeave",
+                    duration: "100%"
+        })
+        .setTween(tl5)
+        .addTo(controller);
+
+        var tl6 = new TimelineMax({onUpdate:updatePercentage});
+        tl6.from('#instaphone', 5, {y:-800,opacity: 1});
+
+        const scene6 = new ScrollMagic.Scene({
+            triggerElement: ".instagram",
+            triggerHook: 1,
+            duration: "100%"
+        })
+        .setTween(tl6)
+        .addTo(controller);
+
+        var tl7 = new TimelineMax({onUpdate:updatePercentage});
+        tl7.to('#instaphone', 5, {y:750, opacity: 1});
+        const scene7 = new ScrollMagic.Scene({
+                    triggerElement: ".instagram",
+                    triggerHook: "onLeave",
+                    duration: "100%"
+        })
+        .setTween(tl7)
+        .addTo(controller);
+
+        var tl8 = new TimelineMax({onUpdate:updatePercentage});
+        tl8.from('#whatsappphone', 5, {y:-800,opacity: 1});
+
+        const scene8 = new ScrollMagic.Scene({
+            triggerElement: ".whatsapp",
+            triggerHook: 1,
+            duration: "100%"
+        })
+        .setTween(tl8)
+        .addTo(controller);
+
+        function updatePercentage() {
+        //percent.innerHTML = (tl.progress() *100 ).toFixed();
+        tl.progress();
+        }
+    </script>
+</body>
+</html>
