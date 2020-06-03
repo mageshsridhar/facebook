@@ -134,7 +134,7 @@ p {
 }
 /*-------------Messenger page------------------*/
 .messenger{
-    background-image: url("/images/messengerbg.png");
+    background-image: url("images/messengerbg.png");
     overflow: hidden;
 }
 /*-------------Instagram page------------------*/
